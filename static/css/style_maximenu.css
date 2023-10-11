@@ -1,0 +1,130 @@
+body {
+    margin: 0px;
+    background: #444444;
+    min-width: 390px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "main main";
+    font-family: Verdana;
+    color: #222221;        
+}
+
+.maximenu {
+    grid-area: main;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 99999;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 14px;
+    border: 0px solid blue;
+    min-height: 50px;
+    max-height: 70px;
+}
+.maximenu ul li a {
+    color:#222221;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.maximenu ul li a:hover {
+    color:#e2a614;
+    transition: color 0.5s ease;
+}
+
+ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 8px 0px 8px 0px;
+    padding: 0px 12px;
+    gap: 30px;
+
+}
+
+li {
+    align-items: center;
+    list-style-type: none;
+
+
+}
+#imenu {
+    fill: #222221;
+    padding: 4px;
+    border-radius: 4px;
+}
+#items li {
+    text-transform: uppercase;
+}
+
+#logo {
+    
+    max-height: 35px;
+    border:0px solid red;
+}
+
+#icon-menu {
+    
+}
+
+
+@media (width <=800px) {
+    .maximenu {
+        max-height: 40px;
+        font-size: 12px;
+    }
+    #imenu {
+        display: block;
+    }
+    #items {
+        display: none;
+    }
+}
+
+@media (800px <=width <=960px) {
+    .maximenu {
+        font-size: 13px;
+        max-height: 40px;
+    }
+    #imenu {
+        display: block;
+    }
+    #items {
+        display: none;
+    }
+}
+
+@media (960px <=width <=1280px) {
+    .maximenu {
+        font-size: 13px;
+        min-height: 70px;
+        max-height: 70px;
+    }
+    #imenu {
+        display: none;
+    }
+    #items {
+        display: flex;
+    }
+}
+
+@media (width >=1280px) {
+    #logo {
+        height: 35px;
+    }
+    .maximenu {
+        font-size: 14px;
+        min-height: 70px;
+        max-height: 70px;
+    }
+    #imenu {
+        display: none;
+    }
+    #items {
+        display: flex;
+    }
+}

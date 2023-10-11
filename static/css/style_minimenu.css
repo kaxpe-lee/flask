@@ -1,0 +1,169 @@
+body {
+    margin: 0px;
+
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "head1 head2";
+    font-family: Verdana;
+    color: #222221;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.minimenu1 {
+    z-index: 99900;
+    grid-area: head1;
+    border: 0px solid red;
+    background: #e2a614;
+    padding: 8px 0px 8px 0px;
+}
+
+.minimenu2 {
+    z-index: 99900;
+    grid-area: head2;
+    background: #e2a614;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border: 0px solid blue;
+}
+
+.menu1 {
+    background: #e2a614;
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    padding-left: 12px;
+}
+
+.menu1 a:hover #icon-facebook {
+    background: #3b5998;
+}
+
+.menu1 a:hover #icon-youtube {
+    background: #ff0000;
+}
+
+.menu1 a:hover #icon-instagram {
+    background: #ac2c74;
+}
+
+.menu1 a:hover #icon-linkedin {
+    background: #0073b1;
+}
+
+.menu1 a:hover #icon-skype {
+    background: #00aae8;
+}
+
+.facebook, .skype, .linkedin, .youtube, .instagram {
+    display: flex;
+    align-items: center;
+}
+.menu2 {
+    background: #e2a614;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding-right: 30px;
+}
+
+.menu2 a {
+    color: #222221;
+    text-decoration: none;
+}
+.menu2 a .icon-map{
+    fill: #222221;
+}
+
+.menu2 a .icon-phone{
+    fill: #222221;
+}
+
+.menu2 a:hover {
+    color: #fff;
+}
+
+.menu2 a:hover .icon-map{
+    fill: #ffffff;
+}
+
+.menu2 a:hover .icon-phone{
+    fill: #ffffff;
+}
+
+#map {
+    display: flex;
+    align-items: center;
+}
+
+#phone {
+    display: flex;
+    align-items: center;
+}
+
+#icon-facebook, #icon-instagram, #icon-youtube, #icon-linkedin, #icon-skype {
+    background-color: #222221;
+    fill: #ffffff;
+    width: 18px;
+    height: 18px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.espacio {
+    padding-left: 5px;
+}
+
+
+@media (width <=800px) {
+    .espacio {
+        display: none;
+    }
+
+    .icon-map {
+        height: 22px
+    }
+
+    .icon-phone {
+        height: 22px
+    }
+
+    object.menu2 {
+        height: 24px
+    }
+}
+
+@media (800px <=width <=960px) {
+    object.menu2 {
+        height: 24px
+    }
+
+    .icon-map {
+        height: 18px
+    }
+
+    .icon-phone {
+        height: 18px
+    }
+}
+
+@media (960px <=width <=1280px) {
+    .icon-map {
+        height: 18px  
+      }
+      .icon-phone {
+          height: 18px  
+        }
+}
+
+@media (width >=1280px) {
+    .icon-map {
+        height: 18px  
+      }
+      .icon-phone {
+          height: 18px  
+        }
+}
