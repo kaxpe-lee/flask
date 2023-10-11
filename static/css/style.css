@@ -200,7 +200,7 @@ li {
 .carrusel {
     grid-area: carrusel;
     border:0px solid red;
-    background-image: url('../img/carrusel.webp');
+    background-image: url('../img/carr.webp');
     background-size: cover;
     background-position: top;
     min-height: 400px;
